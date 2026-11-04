@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-remote"
+version = "0.1.0"
+description = "AI-friendly SSH remote control and deployment CLI"
+requires-python = ">=3.10"
+dependencies = ["paramiko>=3.4,<4"]
+
+[project.scripts]
+ai-remote = "ai_remote.cli:main"
+
+[tool.setuptools]
+packages = ["ai_remote"]
